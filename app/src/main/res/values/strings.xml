@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EjercicioClaseImagenes</string>
+    <string name="titulo">Opciones del fondo</string>
+    <string name="fr">Fondo Rojo</string>
+    <string name="tr">Transparente</string>
+    <string name="av">Activity verde</string>
+</resources>

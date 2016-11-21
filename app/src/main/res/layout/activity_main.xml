@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+
+
+            android:padding="15dp"
+            android:id="@+id/layout"
+            tools:context="com.android.pi.ejercicioclaseimagenes.MainActivity">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:id="@+id/titulo"
+                />
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/titulo"
+
+                android:id="@+id/cbfr"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fr"
+                android:textSize="15dp"
+                android:layout_below="@id/titulo"
+                android:layout_toRightOf="@id/cbfr"
+                android:id="@+id/tvfr"
+                />
+
+
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/cbtr"
+                android:checked="false"
+                android:layout_below="@+id/titulo"
+                android:layout_toEndOf="@+id/tvfr" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tr"
+                android:textSize="15dp"
+                android:id="@+id/tvtr"
+                android:layout_below="@+id/titulo"
+                android:layout_toEndOf="@+id/cbtr" />
+
+
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/cbav"
+                android:checked="false"
+                android:layout_below="@+id/titulo"
+                android:layout_toEndOf="@+id/tvtr" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/av"
+                android:textSize="15dp"
+                android:id="@+id/tvav"
+                android:layout_below="@+id/titulo"
+                android:layout_toEndOf="@+id/cbav" />
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imageView"
+
+                android:layout_below="@+id/cbfr"
+                android:scaleType="fitCenter"
+                android:src="@android:mipmap/sym_def_app_icon"
+                android:padding="20dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogrupo"
+                android:layout_below="@id/imageView"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+
+                >
+
+                <RadioButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Centrado sin estirar"
+                    android:id="@+id/rbc"
+
+
+                    />
+                <RadioButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estirado"
+                    android:id="@+id/rbe"
+                    />
+
+            </RadioGroup>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:id="@+id/imortadelo"
+                android:src="@drawable/morta"
+                android:layout_below="@+id/radiogrupo"
+                android:layout_alignParentBottom="true"
+
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:id="@+id/imafalda"
+                android:src="@drawable/mafaldamundo"
+                android:layout_below="@+id/radiogrupo"
+                android:layout_toRightOf="@id/imortadelo"
+                android:layout_alignTop="@id/imortadelo"
+                android:layout_alignBottom="@id/imortadelo"
+                />
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+</ScrollView>
+
